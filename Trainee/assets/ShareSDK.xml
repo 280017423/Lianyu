@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DevInfor>
+
+    <ShareSDK AppKey="6056440a57e4" />
+    <!-- 修改成你在sharesdk后台注册的应用的appkey" -->
+    <!-- ShareByAppClient标识是否使用微博客户端分享，默认是false -->
+    
+    <QQ
+        AppId="1104294260"
+        AppKey="707i9VKvxGBsuMYg"
+        Enable="true"
+        Id="1"
+        ShareByAppClient="true"
+        SortId="1" />
+    
+    <QZone
+        AppId="1104294260"
+        AppKey="707i9VKvxGBsuMYg"
+        Enable="true"
+        Id="2"
+        ShareByAppClient="true"
+        SortId="2" />
+    
+    <Wechat
+        AppId="wx3c08aca89b7fa727"
+        AppSecret="915cdff2b7a1da09b7e16cd4803de3c6"
+        BypassApproval="false"
+        Enable="true"
+        Id="3"
+        SortId="3" />
+    
+    <WechatMoments
+        AppId="wx3c08aca89b7fa727"
+        AppSecret="915cdff2b7a1da09b7e16cd4803de3c6"
+        BypassApproval="false"
+        Enable="true"
+        Id="4"
+        SortId="4" />
+
+    <SinaWeibo
+        AppKey="383739805"
+        AppSecret="6f4e3ae6f6dcae38e1e8df09ac647bb7"
+        Enable="true"
+        Id="5"
+        RedirectUrl="http://www.paidui.com"
+        ShareByAppClient="true"
+        SortId="5" />
+
+    <!-- ShareByAppClient标识是否使用微博客户端分享，默认是false -->
+
+</DevInfor>

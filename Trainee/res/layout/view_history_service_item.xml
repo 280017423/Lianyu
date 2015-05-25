@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="10dp" >
+
+    <com.xhr.framework.widget.RoundCornerImageView
+        xmlns:app1="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/iv_head_img"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:contentDescription="@null"
+        android:focusable="false"
+        app1:roundHeight="5dp"
+        app1:roundWidth="5dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/iv_head_img"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="这里是显示的昵称"
+                android:textColor="#FF41B2"
+                android:textSize="@dimen/size_2" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:text="1天前"
+                android:textColor="#cccccc"
+                android:textSize="@dimen/size_3" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_coin_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="消费金额："
+                android:textColor="#999999"
+                android:textSize="@dimen/size_3" />
+
+            <ImageView
+                android:id="@+id/iv_coin"
+                android:layout_width="18dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/tv_coin_title"
+                android:background="@drawable/icon_service_price"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/tv_coin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@id/iv_coin"
+                android:text="30"
+                android:textColor="#FF41B2"
+                android:textSize="@dimen/size_3" />
+
+            <RatingBar
+                android:id="@+id/service_ratingbar"
+                style="@style/HistoryServiceRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:isIndicator="true"
+                android:numStars="5" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/iv_transfered"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/tv_transfer_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@id/iv_transfered"
+                android:textSize="@dimen/size_3"
+                android:textStyle="italic" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

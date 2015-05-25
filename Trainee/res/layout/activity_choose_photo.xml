@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/defalut_bg" >
+
+    <RelativeLayout
+        android:id="@+id/photo_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_hight"
+        android:background="@drawable/default_title_bg" >
+
+        <LinearLayout
+            android:id="@+id/title_with_back_title_btn_left"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:onClick="onClick"
+            android:orientation="horizontal"
+            android:paddingLeft="14dp"
+            android:visibility="visible" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tongyong_fanhui"
+                android:duplicateParentState="true"
+                android:focusable="false"
+                android:textColor="@color/share_detail_show_all"
+                android:textSize="@dimen/size_3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:duplicateParentState="true"
+                android:focusable="false"
+                android:text="所有照片"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="@dimen/line_height"
+                android:layout_height="20dp"
+                android:background="@color/line_bg" />
+
+            <Button
+                android:id="@+id/title_with_back_title_btn_right"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/title_right_bg"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:paddingLeft="@dimen/login_line_padding_horizontal"
+                android:paddingRight="@dimen/login_line_padding_horizontal"
+                android:text="取消"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_1" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/choosed_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:gravity="center"
+            android:paddingLeft="50dp"
+            android:paddingRight="35dp"
+            android:text="预览"
+            android:textColor="@color/choose_photo_color"
+            android:textSize="@dimen/size_2"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_choosed_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:paddingLeft="35dp"
+            android:paddingRight="20dp"
+            android:text="完成"
+            android:textColor="@color/choose_photo_color"
+            android:textSize="@dimen/size_2" />
+    </RelativeLayout>
+
+    <com.xhr88.lp.widget.MultiGridView
+        android:id="@+id/gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/choosed_layout"
+        android:layout_below="@id/photo_title_layout"
+        android:horizontalSpacing="10dp"
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" />
+
+</RelativeLayout>

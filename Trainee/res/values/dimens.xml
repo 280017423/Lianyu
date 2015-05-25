@@ -1,0 +1,114 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- 字体大小新规则 -->
+    <dimen name="size_big">20dp</dimen>
+    <!-- 30px -->
+    <dimen name="size_big_1">27dp</dimen>
+    <!-- 40px -->
+    <dimen name="size_big_1.5">24dp</dimen>
+    <!-- 40px -->
+    <dimen name="size_big_2">22dp</dimen>
+    <!-- 33px -->
+    <dimen name="size_1">18dp</dimen>
+    <!-- 27px -->
+    <dimen name="size_2">16dp</dimen>
+    <!-- 24px -->
+    <dimen name="size_2_1">15dp</dimen>
+    <!-- 22px -->
+    <dimen name="size_3">14dp</dimen>
+    <!-- 21px -->
+    <dimen name="size_3_1">13dp</dimen>
+    <!-- 20px -->
+    <dimen name="size_4">12dp</dimen>
+    <!-- 18px -->
+    <dimen name="size_4_1">11dp</dimen>
+    <!-- 16px -->
+    <dimen name="size_5">9dp</dimen>
+    <!-- 14px -->
+    <dimen name="size_6">24dp</dimen>
+    <dimen name="size_7">7dp</dimen>
+    <dimen name="border_radius_with_dimensions">0.7dp</dimen>
+    <dimen name="border_radius_with_dimensions_2x">1.4dp</dimen>
+
+    <!-- 标题高度 -->
+    <dimen name="title_hight">45dp</dimen>
+    <!-- 我的信息 -->
+    <dimen name="user_img_layout_hight">98dp</dimen>
+    <dimen name="common_margin_left">8dp</dimen>
+    <dimen name="common_margin_right">8dp</dimen>
+    <dimen name="common_margin_top">10dp</dimen>
+    <dimen name="margin_top_title">16dp</dimen>
+
+    <!-- 通用一行Item高度 -->
+    <dimen name="item_height_48">48dp</dimen>
+    <dimen name="item_height_42">42dp</dimen>
+    <!-- 63px -->
+    <dimen name="item_height">42dp</dimen>
+    <!-- 63px -->
+
+
+    <!-- 我的 -->
+    <dimen name="login_layout_hight">176dp</dimen>
+    <dimen name="user_img_width">78dp</dimen>
+    <dimen name="user_img_round_width">79dp</dimen>
+    <dimen name="user_img_round_height">79dp</dimen>
+    <dimen name="user_img_height">78dp</dimen>
+
+    <!-- 常规 -->
+    <dimen name="layout_height">48dp</dimen>
+    <dimen name="top_title_textsize">18sp</dimen>
+    <!-- 标题栏文字大小 -->
+    <dimen name="title_textsize">16dp</dimen>
+    <!-- 标题文字大小 -->
+    <dimen name="normal_textsize">14dp</dimen>
+    <!-- 常规文字大小 -->
+    <dimen name="button_textsize">16dp</dimen>
+    <!-- 按钮文字大小 -->
+    <dimen name="line_height">1px</dimen>
+    <!-- 分割线 -->
+    <dimen name="layout_padding">20dp</dimen>
+    <dimen name="textview_padding">15dp</dimen>
+    <dimen name="layout_margin">15dp</dimen>
+
+    <!-- drawable -->
+    <dimen name="red_button_padding">20dp</dimen>
+    <dimen name="red_button_stroke">1px</dimen>
+    <dimen name="red_button_radius">32dp</dimen>
+    <dimen name="login_reg_button_vertical">8dp</dimen>
+    <dimen name="login_reg_button_horizontal">16dp</dimen>
+    <dimen name="login_reg_button_radius">8dp</dimen>
+    <dimen name="login_reg_button_stroke">1px</dimen>
+
+    <!-- LoginActivity -->
+    <dimen name="login_layout_margin">15dp</dimen>
+    <dimen name="login_layout_padding">10dp</dimen>
+    <dimen name="login_button_padding">30dp</dimen>
+    <dimen name="login_line_padding_vertical">5dp</dimen>
+    <dimen name="login_line_padding_horizontal">15dp</dimen>
+    <dimen name="dialog_left_margin">0dp</dimen>
+    <dimen name="dialog_top_margin">0dp</dimen>
+    <dimen name="dialog_right_margin">0dp</dimen>
+    <dimen name="dialog_bottom_margin">0dp</dimen>
+    <dimen name="dialog_btn_close_right_margin">10dp</dimen>
+    <dimen name="dialog_btn_close_top_margin">10dp</dimen>
+
+    <!-- 滤镜菜单 -->
+    <dimen name="filters_menu_height">60dp</dimen>
+    <dimen name="filters_buttom_height">120dp</dimen>
+    <dimen name="pull_refresh_listview_text_size">12dp</dimen>
+    <dimen name="none">10dp</dimen>
+    <dimen name="timeline_avatar_height">50dp</dimen>
+    <dimen name="timeline_avatar_width">50dp</dimen>
+    <dimen name="timeline_pic_high_thumbnail_height">230dp</dimen>
+    <dimen name="timeline_pic_thumbnail_height">157dp</dimen>
+    <dimen name="timeline_pic_thumbnail_width">157dp</dimen>
+    <dimen name="profile_avatar_height">70dp</dimen>
+    <dimen name="profile_avatar_width">70dp</dimen>
+    
+    <!-- TrendsDetialActivity -->
+    <dimen name="TrendsDetial_layout_marginTop">10dp</dimen>
+
+</resources>

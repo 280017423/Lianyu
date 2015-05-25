@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/iv_personal_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:contentDescription="@null"
+        android:scaleType="fitXY" />
+
+    <com.xhr.framework.widget.RoundCornerImageView
+        xmlns:app1="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/iv_personal_head_img"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignBottom="@id/iv_personal_bg"
+        android:layout_alignRight="@id/iv_personal_bg"
+        android:layout_marginBottom="-20dp"
+        android:layout_marginRight="20dp"
+        android:contentDescription="@null"
+        android:onClick="onClick"
+        android:scaleType="fitXY"
+        app1:roundHeight="5dp"
+        app1:roundWidth="5dp" />
+
+    <TextView
+        android:id="@+id/tv_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_personal_bg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="昵称"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_1" />
+
+    <com.xhr88.lp.widget.MListView
+        android:id="@+id/other_trends_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_personal_bg"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/setting_item_bg"
+        android:cacheColorHint="@android:color/transparent"
+        android:clickable="true"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0.7dp"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+
+    <ImageView
+        android:id="@+id/iv_empty_view"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/other_trends_list"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/transparent"
+        android:contentDescription="@null"
+        android:visibility="visible" />
+
+</RelativeLayout>

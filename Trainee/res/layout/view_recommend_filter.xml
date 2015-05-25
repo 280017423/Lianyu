@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#9F000000"
+    android:gravity="bottom" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#f6f6f6"
+        android:clickable="false"
+        android:orientation="vertical"
+        android:paddingTop="15dp" >
+
+        <RadioGroup
+            android:id="@+id/radio_group_sex"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/recommend_sex_bg"
+            android:orientation="horizontal"
+            android:padding="0.7dp" >
+
+            <RadioButton
+                android:id="@+id/radio_male"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/recommend_man_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="男"
+                android:textColor="@color/sex_radio_color"
+                android:textSize="@dimen/size_2" />
+
+            <RadioButton
+                android:id="@+id/radio_female"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/recommend_woman_selector"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:text="女"
+                android:textColor="@color/sex_radio_color"
+                android:textSize="@dimen/size_2" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:text="你喜欢的类型"
+            android:textColor="#999"
+            android:textSize="@dimen/size_2" />
+
+        <GridView
+            android:id="@+id/gv_recommend_cate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/cate_bg"
+            android:cacheColorHint="@android:color/transparent"
+            android:clickable="true"
+            android:fadingEdge="none"
+            android:horizontalSpacing="0.2dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3"
+            android:paddingTop="0.3dp"
+            android:scrollbars="none"
+            android:verticalSpacing="0.2dp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="20dp"
+            android:background="#e0e0e0"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/btn_recommend_cate_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/setting_item_bg"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="#007aff"
+                android:textSize="@dimen/size_2" />
+
+            <Button
+                android:id="@+id/btn_recommend_cate_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="0.7dp"
+                android:layout_weight="1"
+                android:background="@drawable/setting_item_bg"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="#007aff"
+                android:textSize="@dimen/size_2" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

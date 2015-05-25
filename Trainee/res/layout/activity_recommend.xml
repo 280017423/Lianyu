@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#F2F2F2" >
+	<com.xhr.framework.widget.pulltorefresh.PullToRefreshGridView
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:id="@+id/gv_recommend"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:cacheColorHint="@android:color/transparent"
+		android:clickable="true"
+		android:fadingEdge="none"
+		android:horizontalSpacing="10dp"
+		android:listSelector="@android:color/transparent"
+		android:numColumns="2"
+		android:paddingLeft="10dp"
+		android:paddingRight="10dp"
+		android:paddingTop="10dp"
+		android:scrollbars="none"
+		android:stretchMode="columnWidth"
+		android:verticalSpacing="10dp"
+		app:isShowFooter="true" />
+</RelativeLayout>

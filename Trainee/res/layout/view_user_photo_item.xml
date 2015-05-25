@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <com.xhr.framework.widget.RoundCornerImageView
+        xmlns:app1="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/iv_head_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        app1:roundHeight="5dp"
+        app1:roundWidth="5dp" />
+
+</RelativeLayout>

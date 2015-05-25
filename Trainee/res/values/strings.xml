@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android=" http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">恋语</string>
+    <string name="weixin_login">微信</string>
+    <string name="login_button_text_qq">QQ</string>
+    <string name="login_button_text_sina">新浪微博</string>
+    <string name="btn_txt_no">否</string>
+    <string name="btn_txt_yes">是</string>
+    <string name="button_text_tips">提示</string>
+    <string name="exit_dialog_title">您的操作将会退出</string>
+    <string name="button_text_yes">好的</string>
+    <string name="button_text_no">取消</string>
+    <string name="update_dialog_msg">版本过低，需要升级到最新版本才能使用</string>
+    <string name="button_text_exit">退出程序</string>
+    <string name="button_text_update">立即更新</string>
+    <string name="loveintern_login_tip_birthday_register">生日</string>
+    <string name="loveintern_login_tip_age_register">年龄</string>
+    <string name="loveintern_login_tip_constellation_register">星座</string>
+    <string name="loveintern_register_user_account">用户名</string>
+    <string name="loveintern_login_tip_register_password">密码</string>
+    <string name="register_new_user">注册新用户</string>
+    <string name="edit_text_type">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <!-- EditText Max Length -->
+    <string name="max_length_username">15</string>
+    <string name="max_length_password">16</string>
+    <string name="change_my_paidui_user_icon">修改头像</string>
+    <string name="my_padidui_center_no_find_file">文件没有发现</string>
+    <string name="my_paidui_user_image_upload_success">修改成功</string>
+
+    <!-- 退出提示 -->
+    <string name="exit_prompt">程序 Hold 不住啦，重启一下..</string>
+    <!-- 出错提示 -->
+    <string name="msg_operate_fail_try_again">网络繁忙，请重试</string>
+    <string name="network_is_not_available">当前网络不给力\n建议检查网络状态</string>
+    <string name="network_error_toast_test">当前网络不给力\n建议检查网络状态</string>
+    <string name="more_check_version_no_sdcard">SD卡未准备好，请确认后再进行下载安装</string>
+    <string name="login_error_tip_account_isnull">帐号或密码不能为空</string>
+    <string name="login_error_tip_mobile_error">未填写手机号</string>
+    <string name="login_error_tip_verify_isnull">验证码不正确</string>
+    <string name="user_account_is_not_null">会员名不能为空</string>
+    <string name="login_tip_mobile_register_agreement_hint">注册视为同意排队网的</string>
+    <string name="login_tip_check_verify">验证短信已经发送至</string>
+    <string name="input_verifycode_hint">请输入验证码</string>
+    <string name="login_error_tip_agreement_error">您必须同意排队网用户协议才能进行下一步操作</string>
+    <string name="login_error_tip_passwrod_error">密码为空，请重新输入</string>
+    <string name="login_error_tip_passwrod_style_error">密码由 6-16位字符，可由英文、数字及“_”、“-”组成，请重新输入</string>
+    <string name="login_error_tip_fail">登录失败</string>
+    <string name="login_error_tip_password_noteq">密码输入不一致，请重新输入</string>
+    <string name="login_error_tip_change_password_success">修改成功</string>
+    <string name="login_error_tip_change_password_error">手机或验证码或密码输入不正确</string>
+    <string name="no_return_data">故障，服务器未返回数据！</string>
+    <string name="http_flag">http://</string>
+    <string name="current_version">当前版本<xliff:g>%1$s</xliff:g></string>
+    <string name="new_version">新版本<xliff:g>%1$s</xliff:g></string>
+
+    <!-- 日期选择器 -->
+    <string name="Mon">一</string>
+    <string name="Tue">二</string>
+    <string name="Wed">三</string>
+    <string name="Thu">四</string>
+    <string name="Fri">五</string>
+    <string name="Sat">六</string>
+    <string name="Sun">日</string>
+    <string name="todaty">今天</string>
+    <string name="the_month">月</string>
+    <!-- 统计分析所需要的相应的资源文字 -->
+    <string name="hours">时</string>
+    <string name="minutes">分</string>
+    <string name="seconds">秒</string>
+
+    <string-array name="day_of_week">
+        <item name="Monday">周一</item>
+        <item name="Tuesday">周二</item>
+        <item name="Wednesday">周三</item>
+        <item name="Thursday">周四</item>
+        <item name="Friday">周五</item>
+        <item name="Saturday">周六</item>
+        <item name="Sunday">周日</item>
+    </string-array>
+
+    <!-- time -->
+    <string name="year">年前</string>
+    <string name="month">月前</string>
+    <string name="day">天前</string>
+    <string name="hour">小时前</string>
+    <string name="min">分钟前</string>
+    <string name="sec">秒前</string>
+    <string name="justnow">刚刚</string>
+    <string name="yesterday">昨天</string>
+    <string name="the_day_before_yesterday">前天</string>
+    <string name="today">今天</string>
+    <string name="date_format">M月d日 HH:mm</string>
+    <string name="year_format">yyyy年 M月d日 HH:mm</string>
+
+    <!-- system -->
+    <string name="timeout">网络有问题，连不上</string>
+    <string name="unknown_error_error_code">未知错误，错误代码</string>
+    <string name="unknown_sina_network_error">新浪微博某些网络节点又出故障，换个网络试试</string>
+    <string name="sd_card_in_not_mounted">SD卡未挂载</string>
+    <string name="something_error">发生故障</string>
+    <string name="please_deleted_cache_dir">权限出错，无法读取存储空间，需要用户手动删除SD卡下的
+        /Android/data/org.qii.weiciyuan 目录</string>
+
+    <!-- autorefreshlistview -->
+
+    <string name="pull_down_to_refresh_pull_label">更多</string>
+    <string name="pull_to_refresh_header_subtext_label">上次更新:</string>
+    <string name="no_more_data">已到最后一页</string>
+    <string name="no_data">未找到匹配结果</string>
+    <string name="say_something">说点什么吧……</string>
+    <!-- listview -->
+    <string name="empty">空</string>
+    <!-- timeline -->
+    <string name="refresh">刷新</string>
+    <string name="no_new_message">没有新消息</string>
+    <string name="total">共计</string>
+    <string name="new_messages_count">%s条新消息</string>
+    <string name="new_messages">条新消息</string>
+    <string name="old_messages">条旧消息</string>
+    <string name="weibos">条微博</string>
+    <string name="click_to_load_some_older_msg">点击载入中间数据</string>
+    <string name="loading_middle_msg">载入中间数据……</string>
+    <string name="click_to_load_older_message">网络有问题，点击重新载入</string>
+    <string name="older_message_empty">没有更早的消息了</string>
+    <string name="more">载入更多</string>
+    <string name="browser_all_messages">浏览全部微博</string>
+    <string name="message_list">消息列表</string>
+    <string name="message_number">微博消息</string>
+    <string name="following_list">关注列表</string>
+    <string name="fan_list">粉丝列表</string>
+    <string name="topic_number">话题数</string>
+    <string name="topic_list">话题列表</string>
+    <string name="weibo_number">微博数</string>
+    <string name="follow_him">关注</string>
+    <string name="manage_group">管理分组</string>
+    <string name="unfollow_him">取消关注</string>
+    <string name="follow_successfully">关注成功</string>
+    <string name="unfollow_successfully">已经取消关注</string>
+    <string name="modify_successfully">修改完成</string>
+    <string name="remove_fan_successfully">Ta 已经不再关注你了</string>
+    <string name="m">男</string>
+    <string name="f">女</string>
+    <string name="verified_user">认证账户</string>
+    <string name="verified_reason">新浪认证</string>
+    <string name="is_following_me">正在关注</string>
+    <string name="search_result">\'<xliff:g>%1$s</xliff:g>\'结果</string>
+    <string name="not_support_take_photo">手机不支持拍照功能</string>
+    <string name="not_have_sd">没有检测到存储卡</string>
+    <string name="empty_info_my_trends_list">您还没有发布任何动态</string>
+    <string name="empty_info_attention_trends_list">您关注的还没发布动态</string>
+    <string name="empty_info_my_attention_list">您还没有关注任何人</string>
+    <string name="empty_info_my_fans_list">您还没成为别人的焦点哟~~加油!</string>
+    <string name="empty_info_pay_record">您还没有数据记录</string>
+    <string name="empty_info_service_record">您还没有服务记录</string>
+
+    <item name="tag1" type="id"></item>
+    <item name="tag2" type="id"></item>
+    <item name="tag3" type="id"></item>
+    <item name="tag4" type="id"></item>
+
+</resources>

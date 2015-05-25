@@ -1,0 +1,25 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Trainee/libs/alipaysdk.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Trainee/libs/alipaysecsdk.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Trainee/libs/umeng-analytics-v5.4.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Trainee/libs/ShareSDK-Wechat-Moments-2.5.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Trainee/libs/ShareSDK-Core-2.5.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Trainee/libs/android-async-http-1.4.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Trainee/libs/mframework.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Trainee/libs/httpcore-4.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Trainee/libs/ShareSDK-QQ-2.5.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Trainee/libs/Rong_IMKit_v1_4_1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Trainee/libs/ShareSDK-Wechat-2.5.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Trainee/libs/alipayutdid.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Trainee/libs/bugly_1.1.7_release.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Trainee/libs/qiniu-android-sdk-7.0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Trainee/libs/ShareSDK-Wechat-Core-2.5.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Trainee/libs/ShareSDK-QZone-2.5.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Trainee/libs/ShareSDK-SinaWeibo-2.5.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

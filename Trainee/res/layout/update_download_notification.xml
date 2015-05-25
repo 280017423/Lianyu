@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="47.0dip"
+            android:layout_height="47.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5.0dip"
+            android:src="@drawable/ic_launcher" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:paddingRight="3.0dip"
+            android:src="@drawable/umeng_download_line" />
+
+        <LinearLayout
+            android:id="@+id/umeng_common_app"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:paddingTop="8dp"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/umeng_common_appIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <!--
+            <TextView
+                android:id="@+id/umeng_common_progress_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:singleLine="true"
+                android:textColor="#ff000000"
+                android:textSize="14sp" />
+            -->
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/umeng_common_app"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/umeng_common_notification"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="3.0dip" >
+
+                <TextView
+                    android:id="@+id/umeng_common_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="2dp"
+                    android:singleLine="true"
+                    android:text="@string/UMDownload_tickerText"
+                    android:textColor="#ff646464"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/umeng_common_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="#ff000000"
+                    android:textSize="14sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/umeng_common_progress_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="#fff"
+                    android:textSize="15sp"
+                    android:text="0%"
+                    android:textStyle="bold"
+                    android:padding="3dp" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/umeng_common_notification" >
+
+                <ProgressBar
+                    android:id="@+id/umeng_common_progress_bar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="20.0dip"
+                    android:layout_marginRight="5.0dip" />
+            </FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

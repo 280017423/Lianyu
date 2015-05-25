@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:background="@drawable/setting_item_bg"
+	android:descendantFocusability="blocksDescendants"
+	android:padding="10dp" >
+	<com.xhr.framework.widget.RoundCornerImageView
+		xmlns:app1="http://schemas.android.com/apk/res-auto"
+		android:id="@+id/ibtn_head_img"
+		android:layout_width="50dp"
+		android:layout_height="50dp"
+		android:background="@null"
+		android:clickable="true"
+		android:contentDescription="@null"
+		android:focusable="false"
+		android:scaleType="fitXY"
+		app1:roundHeight="5dp"
+		app1:roundWidth="5dp" />
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:layout_toRightOf="@id/ibtn_head_img"
+		android:orientation="vertical" >
+		<TextView
+			android:id="@+id/tv_nickname"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@null"
+			android:textColor="#9a9a9a"
+			android:textSize="@dimen/size_3" />
+		<TextView
+			android:id="@+id/tv_date"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="4dp"
+			android:background="@null"
+			android:textColor="#bfbfbf"
+			android:textSize="@dimen/size_4_1" />
+		<TextView
+			android:id="@+id/tv_content"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@null"
+			android:paddingBottom="2dp"
+			android:paddingTop="2dp"
+			android:textColor="#666666"
+			android:textSize="@dimen/size_2_1" />
+	</LinearLayout>
+</RelativeLayout>

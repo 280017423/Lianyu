@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_image_grid"
+    android:layout_width="74dp"
+    android:layout_height="74dp" >
+
+    <com.xhr.framework.widget.RoundCornerImageView
+        xmlns:app1="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/image"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        android:layout_centerInParent="true"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        app1:roundHeight="5dp"
+        app1:roundWidth="5dp" />
+
+    <ImageView
+        android:id="@+id/iv_del"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@id/image"
+        android:layout_alignTop="@id/image"
+        android:contentDescription="@null"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:scaleType="center"
+        android:src="@drawable/delete_photo" />
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/defalut_bg"
+    android:orientation="vertical"
+    android:paddingTop="10dp" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="您的投诉信息已提交成功！"
+        android:textColor="#25a725"
+        android:textSize="@dimen/size_2" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="客服人员将在48小时内处理完成，处理结果会以系统消息的形式发送给您。亲注意查收"
+        android:textColor="#333333"
+        android:textSize="@dimen/size_2" />
+
+</LinearLayout>

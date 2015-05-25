@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_hight"
+        android:background="@drawable/default_title_bg" >
+
+        <LinearLayout
+            android:id="@+id/title_with_back_title_btn_left"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:onClick="onClick"
+            android:orientation="horizontal"
+            android:paddingLeft="14dp"
+            android:visibility="visible" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tongyong_fanhui"
+                android:duplicateParentState="true"
+                android:focusable="false"
+                android:textColor="@color/share_detail_show_all"
+                android:textSize="@dimen/size_3" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:duplicateParentState="true"
+                android:focusable="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/title_with_back_title_btn_right"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:gravity="center_vertical|right" >
+
+            <ImageView
+                android:id="@+id/iv_msg_info"
+                android:layout_width="46dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/title_right_bg"
+                android:clickable="true"
+                android:contentDescription="@null"
+                android:onClick="onClick"
+                android:scaleType="center"
+                android:src="@drawable/icon_msg_info" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <fragment
+        android:name="io.rong.imkit.fragment.ConversationFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_title" />
+
+    <RelativeLayout
+        android:id="@+id/rl_service_buy"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="#f0f0f0"
+        android:clickable="true"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/btn_charge"
+            android:layout_width="104dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_recharge_bg"
+            android:contentDescription="@null"
+            android:onClick="onClick"
+            android:text="续费"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_service_rating"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="#f0f0f0"
+        android:clickable="true"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_end_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="#e3e3e3"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="服务\n评价"
+            android:textColor="#797979"
+            android:textSize="@dimen/size_2" />
+
+        <Button
+            android:id="@+id/btn_score_ok"
+            android:layout_width="50dp"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_sign_bg"
+            android:contentDescription="@null"
+            android:onClick="onClick"
+            android:text="确定"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_score_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="60dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="#ff41b2"
+            android:textSize="@dimen/size_2" />
+
+        <RatingBar
+            android:id="@+id/service_ratingbar"
+            style="@style/ServiceRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tv_end_info"
+            android:numStars="5"
+            android:stepSize="1" />
+    </RelativeLayout>
+
+</RelativeLayout>

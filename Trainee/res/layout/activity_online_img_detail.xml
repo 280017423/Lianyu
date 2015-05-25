@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black"
+    android:orientation="vertical" >
+
+    <com.xhr.framework.widget.photoview.HackyViewPager
+        android:id="@+id/vp_photo_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <com.xhr88.lp.widget.CircleFlowIndicator
+        android:id="@+id/mIndicator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        app:point_normal_drawable="@drawable/flow_indicator_normal"
+        app:point_radius="5dp"
+        app:point_seleted_drawable="@drawable/flow_indicator_selected"
+        app:point_size="5dp"
+        app:space="5dp" />
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="@color/white"
+	android:padding="10dp" >
+	<RelativeLayout
+		android:id="@+id/rl_experience_title"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" >
+		<ImageView
+			android:id="@+id/iv_experience"
+			android:layout_width="25dp"
+			android:layout_height="25dp"
+			android:contentDescription="@null"
+			android:duplicateParentState="true" />
+		<TextView
+			android:id="@+id/tv_experience_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="5dp"
+			android:layout_toRightOf="@id/iv_experience"
+			android:text="一小时体验"
+			android:textColor="#666666"
+			android:textSize="@dimen/size_2" />
+		<TextView
+			android:id="@+id/tv_experience_price"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:text="5/小时"
+			android:textColor="#b596cb"
+			android:textSize="@dimen/size_3" />
+		<ImageView
+			android:id="@+id/iv_experience_price"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginRight="3dp"
+			android:layout_toLeftOf="@id/tv_experience_price"
+			android:contentDescription="@null"
+			android:duplicateParentState="true"
+			android:src="@drawable/person_main_coin" />
+	</RelativeLayout>
+	<TextView
+		android:id="@+id/tv_experience_content"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/rl_experience_title"
+		android:ellipsize="end"
+		android:maxLines="2"
+		android:paddingBottom="5dp"
+		android:paddingTop="5dp"
+		android:text="不少于100条文字信息"
+		android:textColor="#bfbfbf"
+		android:textSize="@dimen/size_3" />
+	<Button
+		android:id="@+id/btn_show_all"
+		android:layout_width="110dp"
+		android:layout_height="25dp"
+		android:layout_below="@id/tv_experience_content"
+		android:background="@drawable/buy_service_show_all_1"
+		android:paddingRight="15dp"
+		android:text="服务内容详情"
+		android:textColor="@color/white"
+		android:textSize="@dimen/size_4" />
+	<Button
+		android:id="@+id/btn_buy"
+		android:layout_width="56dp"
+		android:layout_height="25dp"
+		android:layout_alignParentRight="true"
+		android:layout_below="@id/tv_experience_content"
+		android:background="@drawable/btn_buy_bg"
+		android:textColor="#fa89cd"
+		android:textSize="@dimen/size_4" />
+	<TextView
+		android:id="@+id/tv_detail"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/btn_show_all"
+		android:layout_marginTop="5dp"
+		android:background="@drawable/buy_service_detail_bg"
+		android:ellipsize="end"
+		android:padding="5dp"
+		android:textColor="#7b7b7b"
+		android:textSize="@dimen/size_4"
+		android:visibility="gone" />
+</RelativeLayout>

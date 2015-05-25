@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#9F000000"
+    android:gravity="bottom" >
+
+    <LinearLayout
+        android:id="@+id/ll_wv_picker"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.xhr88.lp.widget.wheelview.WheelView
+            android:id="@+id/wv_year_picker"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/defalut_bg" />
+
+        <com.xhr88.lp.widget.wheelview.WheelView
+            android:id="@+id/wv_month_picker"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/defalut_bg" />
+
+        <com.xhr88.lp.widget.wheelview.WheelView
+            android:id="@+id/wv_day_picker"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/defalut_bg" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_title_line"
+        style="@style/divider_line_style"
+        android:layout_above="@id/ll_wv_picker" />
+
+</RelativeLayout>

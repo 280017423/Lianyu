@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="libs1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Framework/libs/PDGson-2.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Framework/libs/httpmime-4.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Framework/libs/commons-codec-1.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Framework/libs/android-support-v4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

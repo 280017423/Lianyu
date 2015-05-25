@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="type" type="id"></item>
+    <item name="tag_view_holder" type="id"></item>
+    <item name="position" type="id"></item>
+    <item name="i" type="id"></item>
+    <item name="name" type="id"></item>
+    <item name="id" type="id"></item>
+    <item name="model" type="model"></item>
+    <item name="video" type="id"></item>
+    <item name="status" type="id"></item>
+    <!-- ListView点击展开控件 -->
+    <item name="expandable_toggle_button" type="id"/>
+    <item name="expandable" type="id"/>
+
+</resources>

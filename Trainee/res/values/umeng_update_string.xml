@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="UMBreak_Network">未联网</string>
+    <string name="UMUpdateTitle">应用程序有新版本更新</string>
+    <string name="UMNewVersion">最新版本: </string>
+    <string name="UMGprsCondition">（提示：非WIFI环境）</string>
+    <string name="UMUpdateNow">立即更新</string>
+    <string name="UMAppUpdate">应用更新</string>
+    <string name="UMNotNow">以后再说</string>
+    <string name="UMUpdateExit">退出程序</string>
+    <string name="UMToast_IsUpdating">正在更新中....</string>
+    <string name="UMDialog_InstallAPK">缘来新版本下载完成，立即安装？</string>
+    <string name="UMDownload_tickerText">正在下载应用</string>
+    <string name="UMDownload_faild">下载失败</string>
+    <string name="UMDownload_success">下载成功</string>
+    <string name="sd_not_exists">SD卡不存在，无法完成升级！</string>
+    <string name="sd_space_empty">SD卡剩余空间不足，请释放空间后再进行升级安装！</string>
+    <string name="ver_latest">最新版本:</string>
+    <string name="ver_desc">版本描述:</string>
+    <string name="ver_getLocalInfoError">升级失败，获取本地包信息错误！</string>
+    <string name="ver_parseInfoError">解析服务器给定信息失败!</string>
+    <string name="ver_serverInfoError">服务器给定升级信息异常!</string>
+    <string name="ver_already_new_version">您使用的是最新版本!</string>
+    <string name="ver_serverError">服务器内部错误！</string>
+    <string name="upgrade_no_internet">无网络连接</string>
+	<string name="ver_desc_default">发现新的版本，请及时更新！</string>
+</resources>

@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.xhr88.lp"
+	android:versionCode="10000"
+	android:versionName="1.0.0" >
+	<uses-sdk
+		android:minSdkVersion="9"
+		android:targetSdkVersion="19" />
+	<uses-permission android:name="android.permission.GET_TASKS" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+	<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+	<uses-permission android:name="android.permission.RECORD_AUDIO" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.WRITE_SETTINGS" />
+	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+	<!-- 可选的权限： -->
+	<uses-permission android:name="android.permission.READ_LOGS" />
+	<application
+		android:name="com.xhr88.lp.app.TraineeApplication"
+		android:allowBackup="true"
+		android:icon="@drawable/ic_launcher"
+		android:label="@string/app_name"
+		android:theme="@style/ThemeActivity" >
+		<meta-data
+			android:name="db_version"
+			android:value="3" />
+		<meta-data
+			android:name="db_name"
+			android:value="xhr.db" />
+		<meta-data
+			android:name="crash_log_path"
+			android:value="/sdcard/xhr/crash/" />
+		<meta-data
+			android:name="crash_report_ext"
+			android:value=".log" />
+		<meta-data
+			android:name="image_dir"
+			android:value="xhr/com.xhr88.lp/image" />
+		<meta-data
+			android:name="http_cache_dir"
+			android:value="xhr/com.xhr88.lp/cache" />
+		<meta-data
+			android:name="status_ok_value"
+			android:value="1" />
+		<meta-data
+			android:name="email_log_enable"
+			android:value="true" />
+		<meta-data
+			android:name="error_log_enable"
+			android:value="true" />
+		<meta-data
+			android:name="debug_log_enable"
+			android:value="true" />
+		<meta-data
+			android:name="api_root_url"
+			android:value="http://api.yese8.cn:8081/api/1_0" />
+		<meta-data
+			android:name="activity_url"
+			android:value="http://api.yese8.cn:8081/?r=web/active/index" />
+		<meta-data
+			android:name="is_developing"
+			android:value="true" />
+		<meta-data
+			android:name="appSign"
+			android:value="xhr" />
+		<meta-data
+			android:name="UMENG_APPKEY"
+			android:value="54efdd45fd98c59c9a001466" >
+		</meta-data>
+		<meta-data
+			android:name="UMENG_CHANNEL"
+			android:value="developing" />
+		<activity
+			android:name=".activity.LoadingActivity"
+			android:configChanges="orientation|keyboardHidden"
+			android:label="@string/app_name"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait"
+			android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity
+			android:name=".activity.ImageBucketActivity"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name=".activity.PublishTrendsActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name=".activity.ImageGridActivity"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name=".activity.SearchActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait"
+			android:windowSoftInputMode="stateVisible" />
+		<activity
+			android:name=".activity.MyTrendsListActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name=".activity.NewerGuidingActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name=".activity.MyLittleShopActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".activity.ShopCheckingActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".activity.ShopCheckFailActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".activity.EditUserCateActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".activity.MyLitterShopActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name=".activity.HelpListActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name=".activity.HelpDetailActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name=".activity.HistoryServiceActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name=".activity.MyAssetsActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name=".activity.OtherTrendsListActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name=".activity.OtherHomeActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name=".activity.MyPayRecordActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name=".activity.SettingActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name=".activity.ChangePwdActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name=".activity.FeedbackActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name=".activity.ComplainActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name=".activity.UpdateActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name=".activity.ChoosePhotoActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".activity.ImageAlbumActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".activity.PhotoPreviewActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".activity.OnLineImageDetailActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".activity.TrendsDetailActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name=".activity.MyTrendsDetailActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name=".activity.MyFansActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name=".activity.MyAttentionActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name=".activity.AttentionTrendsListActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name=".activity.AddShopIntroduceActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name=".activity.RegisterActivity"
+			android:configChanges="orientation|keyboardHidden"
+			android:label="@string/app_name"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait"
+			android:theme="@style/MyTheme.NoTitleBar.LuncherBackground" >
+		</activity>
+		<activity
+			android:name=".activity.ServiceAgreementActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".activity.ServiceApplyActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait"
+			android:windowSoftInputMode="stateVisible" />
+		<activity
+			android:name=".activity.MainActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name=".activity.Registerstep1Activity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name=".activity.LoginActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".activity.Registerstep2Activity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".activity.NewRegisterActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".activity.PersonalActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".activity.EditUserInfoActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".activity.EditNickNameActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".activity.EditBirthActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".activity.BuyServiceActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".activity.OnlinePayActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".activity.ClipPictureActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".activity.UserAgreementActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".activity.UpdateStateActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait"
+			android:theme="@android:style/Theme.Dialog" />
+		<activity
+			android:name=".activity.ActivityDetailActivity"
+			android:launchMode="singleTop"
+			android:screenOrientation="portrait" >
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data
+					android:host="com.xhr88.lp"
+					android:scheme="xhr" />
+			</intent-filter>
+		</activity>
+		<!-- alipay sdk begin -->
+		<activity
+			android:name="com.alipay.sdk.app.H5PayActivity"
+			android:configChanges="orientation|keyboardHidden|navigation"
+			android:exported="false"
+			android:screenOrientation="behind"
+			android:windowSoftInputMode="adjustResize|stateHidden" >
+		</activity>
+		<!-- 广播接收器 -->
+		<receiver android:name=".listener.ForceOfflineReceiver" >
+			<intent-filter>
+				<action android:name="com.xhr88.lp.FORCE_OFFLINE" />
+			</intent-filter>
+		</receiver>
+		<!-- alipay sdk end -->
+		<activity
+			android:name="cn.sharesdk.framework.ShareSDKUIShell"
+			android:configChanges="keyboardHidden|orientation|screenSize"
+			android:screenOrientation="portrait"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"
+			android:windowSoftInputMode="stateHidden|adjustResize" >
+			<intent-filter>
+				<data android:scheme="tencent1104294260" />
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity
+			android:name=".wxapi.WXEntryActivity"
+			android:configChanges="keyboardHidden|orientation|screenSize"
+			android:exported="true"
+			android:screenOrientation="portrait"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+		<!-- Begin Rong Cloud -->
+		<meta-data
+			android:name="RONG_CLOUD_APP_KEY"
+			android:value="n19jmcy59f2s9" />
+		<service android:name="io.rong.imlib.RongService" />
+		<activity
+			android:name="io.rong.imkit.RongActivity"
+			android:screenOrientation="portrait" >
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data
+					android:host="com.xhr88.lp"
+					android:pathPrefix="/conversationsetting/"
+					android:scheme="rong" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data
+					android:host="com.xhr88.lp"
+					android:path="/grouplist"
+					android:scheme="rong" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data
+					android:host="com.xhr88.lp"
+					android:path="/conversationgrouplist"
+					android:scheme="rong" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data
+					android:host="com.xhr88.lp"
+					android:pathPrefix="/friend/"
+					android:scheme="rong" />
+			</intent-filter>
+		</activity>
+		<activity
+			android:name="io.rong.imkit.RongSingleActivity"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait" >
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data
+					android:host="com.xhr88.lp"
+					android:path="/conversationlist"
+					android:scheme="rong" />
+			</intent-filter>
+		</activity>
+		<!--
+        <activity
+            android:name="io.rong.imkit.RongSecActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                
+                    android:host="com.xhr88.lp"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+		-->
+		<activity
+			android:name=".activity.ConversationActivity"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait" >
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data
+					android:host="com.xhr88.lp"
+					android:pathPrefix="/conversation/"
+					android:scheme="rong" />
+			</intent-filter>
+		</activity>
+		<activity
+			android:name="io.rong.voipkit.activity.CallSideActivity"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name="io.rong.voipkit.activity.CalledSideActivity"
+			android:excludeFromRecents="true"
+			android:screenOrientation="portrait" >
+			<intent-filter>
+				<action android:name="io.rong.voipkit.calledSideActivity.action" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data
+					android:host="com.xhr88.lp"
+					android:path="/calledsideactivity"
+					android:scheme="rong" />
+			</intent-filter>
+		</activity>
+		<service
+			android:name="io.rong.imkit.service.RongIMService"
+			android:enabled="true"
+			android:exported="false"
+			android:priority="1000" >
+		</service>
+		<service
+			android:name="io.rong.imlib.push.PushService"
+			android:process="io.rong.push" >
+			<intent-filter>
+				<category android:name="android.intent.category.DEFAULT" />
+				<action android:name="io.rong.push" />
+			</intent-filter>
+		</service>
+		<service
+			android:name="io.rong.imlib.push.CommandService"
+			android:process="io.rong.push" >
+			<intent-filter>
+				<category android:name="android.intent.category.DEFAULT" />
+				<action android:name="io.rong.command" />
+			</intent-filter>
+		</service>
+		<receiver android:name="com.xhr88.lp.update.NotificationReceiver" >
+			<intent-filter>
+				<action android:name="action_xhr_notification_show" />
+				<action android:name="action_xhr_notification_hide" />
+				<action android:name="action_xhr_notification_show_download_app" />
+				<action android:name="action_xhr_notification_hide_download_app" />
+			</intent-filter>
+		</receiver>
+		<receiver
+			android:name="io.rong.imlib.push.PushReceiver"
+			android:process="io.rong.push" >
+			<intent-filter>
+				<action android:name="io.rong.imlib.action.push.heartbeat" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+			</intent-filter>
+		</receiver>
+		<receiver android:name="io.rong.imlib.push.PushMessageReceiver" >
+			<intent-filter>
+				<action android:name="io.rong.push.message" />
+			</intent-filter>
+		</receiver>
+		<!-- End Rong Cloud -->
+	</application>
+</manifest>

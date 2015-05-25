@@ -1,0 +1,231 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/trends_detail_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_hight"
+        android:background="@drawable/default_title_bg" >
+
+        <LinearLayout
+            android:id="@+id/title_with_back_title_btn_left"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:onClick="onClick"
+            android:orientation="horizontal"
+            android:paddingLeft="14dp"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/register2_tv_title_with_back_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tongyong_fanhui"
+                android:duplicateParentState="true"
+                android:focusable="false"
+                android:textColor="@color/share_detail_show_all"
+                android:textSize="@dimen/size_3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:duplicateParentState="true"
+                android:focusable="false"
+                android:text="动态详细"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/title_with_back_title_btn_right"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="@dimen/line_height"
+                android:layout_height="20dp"
+                android:background="@color/line_bg" />
+
+            <ImageButton
+                android:id="@+id/ibtn_share"
+                android:layout_width="50dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/title_right_bg"
+                android:contentDescription="@null"
+                android:focusable="false"
+                android:onClick="onClick"
+                android:src="@drawable/icon_share" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_trends_info_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:id="@+id/ll_buttom_tab"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/rl_trend_detail_comment"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/setting_item_bg"
+                android:onClick="onClick"
+                android:paddingTop="3dp" >
+
+                <TextView
+                    android:id="@+id/txt_comment"
+                    style="@style/home_item_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableTop="@drawable/dynamic_item_comment"
+                    android:gravity="center"
+                    android:text="评论 "
+                    android:textColor="@color/tab_select_text_color"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_trend_detail_like"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/setting_item_bg"
+                android:onClick="onClick"
+                android:paddingTop="3dp" >
+
+                <View
+                    android:layout_width="@dimen/line_height"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/line_bg" />
+
+                <TextView
+                    android:id="@+id/tv_good"
+                    style="@style/home_item_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableTop="@drawable/dynamic_item_like"
+                    android:gravity="center"
+                    android:text="喜欢"
+                    android:textColor="@color/tab_select_text_color"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_trend_detail_chat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/setting_item_bg"
+                android:onClick="onClick"
+                android:paddingTop="3dp"
+                android:visibility="gone" >
+
+                <View
+                    android:layout_width="@dimen/line_height"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/line_bg" />
+
+                <TextView
+                    android:id="@+id/txt_chat"
+                    style="@style/home_item_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableTop="@drawable/trend_detail_chat_bg"
+                    android:gravity="center"
+                    android:text="聊天"
+                    android:textColor="@color/tab_select_text_color"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/btn_send_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/btn_send_comment_bg"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="发送"
+                android:textColor="@color/send_comment_color"
+                android:textSize="@dimen/size_2" />
+
+            <EditText
+                android:id="@+id/edt_add_comment"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="-0.7dp"
+                android:layout_toLeftOf="@id/btn_send_comment"
+                android:background="@drawable/edt_send_comment_bg"
+                android:inputType="text"
+                android:maxLength="200"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:scrollHorizontally="false" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.7dp"
+            android:layout_alignParentTop="true"
+            android:background="#e0e0e0" />
+    </RelativeLayout>
+
+    <com.xhr.framework.widget.pulltorefresh.XScrollView
+        android:id="@+id/sl_normal_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/rl_trends_info_bottom"
+        android:layout_below="@id/trends_detail_title_layout"
+        android:fadingEdge="none"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+    </com.xhr.framework.widget.pulltorefresh.XScrollView>
+
+</RelativeLayout>
