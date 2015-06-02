@@ -207,6 +207,7 @@
                 android:id="@+id/rl_version_check_item"
                 android:layout_width="fill_parent"
                 android:layout_height="48dp"
+                android:visibility="gone"
                 android:background="@drawable/setting_item_bg"
                 android:clickable="true"
                 android:onClick="onClick" >

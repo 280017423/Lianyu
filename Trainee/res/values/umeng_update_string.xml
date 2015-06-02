@@ -25,4 +25,9 @@
     <string name="ver_serverError">服务器内部错误！</string>
     <string name="upgrade_no_internet">无网络连接</string>
 	<string name="ver_desc_default">发现新的版本，请及时更新！</string>
+	<string name="UMUpdateContent">Update Content</string>
+	<string name="UMUpdateSize">Update size: </string>
+	<string name="UMTargetSize">Target size: </string>
+	<string name="UMIgnore">Ingore this</string>
+	<string name="UMUpdateCheck">2.6.0.1.20150312</string>
 </resources>

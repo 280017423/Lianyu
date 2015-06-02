@@ -22,6 +22,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.umeng.analytics.MobclickAgent;
+import com.umeng.update.UmengUpdateAgent;
 import com.xhr.framework.util.HttpClientUtil;
 import com.xhr.framework.util.UIUtil;
 import com.xhr88.lp.R;
@@ -93,7 +94,9 @@ public class MainActivity extends FragmentBaseActivity implements OnClickListene
 			mBroadcastReciver = new ReceiveMessageBroadcastReciver();
 		}
 		registerReceiver(mBroadcastReciver, intentFilter);
-		checkUpdate();
+		UmengUpdateAgent.setUpdateOnlyWifi(false);
+		UmengUpdateAgent.update(this);
+		// checkUpdate(); // 屏蔽升级逻辑
 	}
 
 	private class ReceiveMessageBroadcastReciver extends BroadcastReceiver {
