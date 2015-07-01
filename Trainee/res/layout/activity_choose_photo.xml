@@ -104,7 +104,7 @@
             android:textSize="@dimen/size_2" />
     </RelativeLayout>
 
-    <com.xhr88.lp.widget.MultiGridView
+    <GridView
         android:id="@+id/gridview"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"

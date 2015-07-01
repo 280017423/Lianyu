@@ -362,6 +362,9 @@ public class MyCenterFragment extends FragmentBase implements OnClickListener {
 	}
 
 	private void setNewTrendsNotify(boolean hasNewTrends) {
+		if (!isAdded()) {
+			return;
+		}
 		Intent in = new Intent();
 		in.setAction(MainActivity.ACTION_RECEIVE_NEW_TRENDS);
 		in.putExtra("hasNewTrends", hasNewTrends);

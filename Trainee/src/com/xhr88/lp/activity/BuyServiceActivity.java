@@ -3,6 +3,7 @@ package com.xhr88.lp.activity;
 import io.rong.imkit.RongIM;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import android.app.Dialog;
@@ -16,6 +17,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.umeng.analytics.MobclickAgent;
 import com.xhr.framework.util.StringUtil;
 import com.xhr.framework.widget.LoadingUpView;
 import com.xhr88.lp.R;
@@ -181,6 +183,7 @@ public class BuyServiceActivity extends TraineeBaseActivity implements OnClickLi
 					popManager.dismiss();
 				}
 				toast("支付成功");
+				analytics(num);
 				if (!StringUtil.isNullOrEmpty(mUid) && !StringUtil.isNullOrEmpty(mNickName)) {
 					MainActivity.INSTANCE.setTabSelection(TabHomeIndex.HOME_MESSAGE, false);
 					Intent intent = new Intent(BuyServiceActivity.this, MainActivity.class);
@@ -204,6 +207,12 @@ public class BuyServiceActivity extends TraineeBaseActivity implements OnClickLi
 				return LittleShopReq.buyService(mUid, sid, num);
 			}
 		});
+	}
+
+	private void analytics(String num) {
+		HashMap<String, String> map = new HashMap<String, String>();
+		map.put("购买数量", num);
+		MobclickAgent.onEvent(this, "下单统计", map);
 	}
 
 	@Override

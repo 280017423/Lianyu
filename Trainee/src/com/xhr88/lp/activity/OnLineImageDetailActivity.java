@@ -1,6 +1,5 @@
 package com.xhr88.lp.activity;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -11,8 +10,6 @@ import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.view.KeyEvent;
 import android.view.View;
 
-import com.umeng.analytics.MobclickAgent;
-import com.xhr.framework.util.HttpClientUtil;
 import com.xhr.framework.widget.photoview.HackyViewPager;
 import com.xhr88.lp.R;
 import com.xhr88.lp.adapter.OnLineImageDetailAdapter;

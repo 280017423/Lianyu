@@ -238,7 +238,7 @@ public class EditUserInfoActivity extends TraineeBaseActivity implements OnClick
 
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-				if (null == mPictureModels) {
+				if (null == mPictureModels || null == mUserPhoto || mUserPhoto.isEmpty()) {
 					return;
 				}
 				ImageItemModel model = mUserPhoto.get(position);
